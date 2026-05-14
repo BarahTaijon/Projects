@@ -1,47 +1,91 @@
-# OpenCart API Testing & CI Automation Project
+# OpenCart REST API Testing & CI/CD Automation Project
 
 ## Project Overview
-This project demonstrates API testing and automation for an OpenCart-based e-commerce system. It includes executing API requests using Postman, running automated collections using Newman, generating HTML reports, and integrating everything into a CI pipeline using Jenkins.
+
+This project involves API testing of the OpenCart REST API Cart Module using Postman.
+
+The evaluation covers end-to-end cart functionalities, including authentication and cart operations such as managing products within the shopping cart.
+
+The test suite is exported in Postman collection format and executed via Newman from the command line. Additionally, Jenkins is configured to automate test execution as part of a CI pipeline.
+
+---
+
+## Scope of Testing
+
+The following API functionalities are validated:
+
+- Creating an authentication token
+- Adding products to the cart
+- Viewing cart contents
+- Updating product quantity in the cart
+- Removing products from the cart
 
 ---
 
 ## Tech Stack
 
-- OpenCart (E-commerce platform)
+- OpenCart (E-commerce Application)
 - XAMPP (Apache & MySQL)
 - phpMyAdmin
 - Postman
-- Newman
+- Newman (CLI runner for Postman)
 - newman-reporter-html
 - Node.js
 - Java 21
-- Jenkins
+- Jenkins (CI/CD)
 
 ---
 
-## Setup Instructions
+## System Setup
 
-### 1. Start Local Server
-- Open XAMPP
-- Start:
+### 1. Start Local Environment
+- Open XAMPP Control Panel
+- Start the following services:
   - Apache
   - MySQL
+
+Ensure both services are running before proceeding.
 
 ---
 
 ### 2. Database Setup
 - Open phpMyAdmin
 - Create a new database:
-```sql
-openshop.sql
+- Import OpenCart database structure if required
+- Ensure proper configuration between OpenCart and MySQL
+
+---
+
+### 3. OpenCart Application
+- Run OpenCart locally via Apache server
+- Verify application is accessible from the browser
+
+---
+
+## API Testing (Postman)
+
+- Postman is used to design and validate REST API requests
+- A structured collection is created for cart module operations
+- Tests include authentication and full cart lifecycle validation
+
+---
+
+## Automated Execution (Newman CLI)
+
+### Run Collection:
+```bash
+newman run collection.json
 ```
-## Test Results 
 
 ### Newman Execution
 Below is the terminal output after running the collection:
-!![Newman CLI](OpenCart_api_testing/secreenshots/newman-cli.PNG)
+!![Newman CLI](secreenshots/newman-cli.PNG)
+
 ### Newman HTML Report Execution
 Below is the terminal output after running the collection:
+![Newman Report](secreenshots/newman-report_html.PNG)
+![Newman Report](secreenshots/newman-report_html2.PNG)
+![Newman Report](secreenshots/newman-report_html3.PNG)
+![Newman Report](secreenshots/newman-report_html4.PNG)
 
-### Jenkins Execution
-Below is the terminal output after running the collection:
+
