@@ -77,20 +77,20 @@ Ensure both services are running before proceeding.
 newman run collection.json
 ```
 console build:
-![Console Build](secreenshots/jenkins-build.PNG)
+![Console Build](screenshots/jenkins-build.PNG)
 
 console output:
-![Jenkins Console1](secreenshots/jenkins-console1.PNG)
-![Jenkins Console2](secreenshots/jenkins-console2.PNG)
-![Jenkins Console3](secreenshots/jenkins-console3.PNG)
+![Jenkins Console1](screenshots/jenkins-console1.PNG)
+![Jenkins Console2](screenshots/jenkins-console2.PNG)
+![Jenkins Console3](screenshots/jenkins-console3.PNG)
 
 ### Newman Execution
 Below is the terminal output after running the collection:
-![Newman CLI](secreenshots/newman-cli.PNG)
+![Newman CLI](screenshots/newman-cli.PNG)
 
 ### Newman HTML Report Execution
 Below is the terminal output after running the collection:
-![Newman Report](secreenshots/newman-report_html.PNG)
-![Newman Report2](secreenshots/newman-report_html2.PNG)
-![Newman Report3](secreenshots/newman-report_html3.PNG)
-![Newman Report4](secreenshots/newman-report_html4.PNG)
+![Newman Report](screenshots/newman-report_html.PNG)
+![Newman Report2](screenshots/newman-report_html2.PNG)
+![Newman Report3](screenshots/newman-report_html3.PNG)
+![Newman Report4](screenshots/newman-report_html4.PNG)
